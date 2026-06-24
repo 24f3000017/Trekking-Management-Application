@@ -1,0 +1,155 @@
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
+}
+
+
+/* Main container */
+.main-dash {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Flex layout */
+.main-content {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Left section */
+.left-main {
+    width: 50%;
+    
+    margin-top: 10px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.left-main h1 {
+    font-weight: 700;
+}
+
+.left-main p {
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Buttons */
+.btn-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;   /* gap between buttons */
+}
+
+.btn-group button {
+    color: white;
+    width: 250px;
+}
+
+/* Right section */
+.right-main {
+    margin-top: 10px;
+    width: 50%;
+     
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Image */
+.right-img {
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.right-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* 🔥 RESPONSIVE PART */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .left-main,
+    .right-main {
+        width: 100%;
+    }
+
+    .btn-group {
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .left-main {
+        padding: 20px;
+    }
+
+    .left-main h1 {
+        font-size: 24px;
+    }
+
+    .left-main p {
+        font-size: 14px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-group button {
+        width: 100%;
+    }
+}
+
+.blog-dash {
+    margin-top: 40px;
+    min-height: 100vh;
+}
+.col-md-8{
+    background-color: dark;
+    color:white;
+}
+.card-body h5{
+    font-weight: 700;
+}
+.footer {
+    height: 20vh;
+    background: rgb(37, 35, 35);
+    padding: 20px;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;   /* center me lana */
+    gap: 40px;  
+    margin-top: 30px;               /* icons ke beech gap */
+}
+
+.icon-box span {
+    display: flex;
+    flex-direction: column;    /* icon upar, label niche */
+    align-items: center;       /* center align */
+    color: white;
+}
+
+.icon-box i {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.icon-box label {
+    font-size: 14px;
+}
