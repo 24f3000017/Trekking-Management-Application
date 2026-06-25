@@ -1,14 +1,25 @@
+
+*{margin: 0;
+    padding: 0;
+}
 /* Navbar */
 .navbar-brand {
     font-weight: 700;
 }
 
+.nav-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     
+}
 
 /* Main container */
 .main-dash {
     background-color: black;
     color: white;
     min-height: 100vh;
+
 }
 
 /* Flex layout */
@@ -152,4 +163,77 @@
 
 .icon-box label {
     font-size: 14px;
+}
+
+
+/* admin-dashboard */
+
+.admin-dash{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.admin-logout{
+    display: flex;
+    color: white;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.admin-logout p{
+    margin-top: 10px;
+}
+
+.admin-main{
+    display: flex;
+    height: 90vh;
+}
+.line{
+    width: 100%;
+    background-color: white;
+    height: 2px;
+}
+
+/* LEFT SIDEBAR */
+.left-admin{
+    width: 220px;   /* fixed sidebar */
+    background: #222;
+    
+}
+
+/* MENU */
+.admin-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+     margin-top: 20px;
+}
+
+.admin-menu li{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+    font-weight: 700;
+    
+    font-size: 20px;
+}
+
+.admin-menu li:hover{
+    background: white;
+    color: black;
+    box-shadow: 0 2px 4px 0;
+}
+
+/* RIGHT SIDE */
+.right-admin{
+    flex: 1;   /* remaining space */
+    padding: 20px;
+    color: white;
 }
